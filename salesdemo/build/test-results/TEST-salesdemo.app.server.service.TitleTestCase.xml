@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="salesdemo.app.server.service.TitleTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-12-21T06:54:31" hostname="68768ce41e45" time="0.068">
+  <properties/>
+  <testcase name="test1Save" classname="salesdemo.app.server.service.TitleTestCase" time="0.042"/>
+  <testcase name="test2Update" classname="salesdemo.app.server.service.TitleTestCase" time="0.011"/>
+  <testcase name="test3FindById" classname="salesdemo.app.server.service.TitleTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="salesdemo.app.server.service.TitleTestCase" time="0.01"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:31.916--ClientSession(2125499273)--Connection(516014647)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Title_M (titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [82AA773A-FEC8-4D64-BF50-5F424B505BD4, dPazPRUwMKWUcnG066yRacISZx1PWK8kD1dEBeynu21nLPqLjn, 1, AAAAA, 2015-12-21 12:24:31.887, null, 2015-12-21 12:24:31.887, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:31.924--ClientSession(419215634)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE ((activeStatus = ?) AND (titleId = ?))
+	bind => [1, 82AA773A-FEC8-4D64-BF50-5F424B505BD4]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:31.926--ClientSession(493636167)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE (titleId = ?)
+	bind => [82AA773A-FEC8-4D64-BF50-5F424B505BD4]
+[EL Fine]: sql: 2015-12-21 06:54:31.927--ClientSession(493636167)--Connection(516014647)--Thread(Thread[Test worker,5,main])--UPDATE ast_Title_M SET titles = ?, updatedBy = ?, versionId = ? WHERE ((titleId = ?) AND (versionId = ?))
+	bind => [HY4PcKxwsZYR28qJNa8LlvV8dzJd7IMwAmJaavqaWb2eRrX5q7, AAAAA, 2, 82AA773A-FEC8-4D64-BF50-5F424B505BD4, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:31.934--ClientSession(443362976)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE ((activeStatus = ?) AND (titleId = ?))
+	bind => [1, 82AA773A-FEC8-4D64-BF50-5F424B505BD4]
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:31.938--ClientSession(1729257796)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE (titleId = ?)
+	bind => [82AA773A-FEC8-4D64-BF50-5F424B505BD4]
+[EL Fine]: sql: 2015-12-21 06:54:31.939--ClientSession(1729257796)--Connection(516014647)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Title_M WHERE ((titleId = ?) AND (versionId = ?))
+	bind => [82AA773A-FEC8-4D64-BF50-5F424B505BD4, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

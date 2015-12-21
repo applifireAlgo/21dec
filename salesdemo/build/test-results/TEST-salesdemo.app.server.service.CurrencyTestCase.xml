@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="salesdemo.app.server.service.CurrencyTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-12-21T06:54:30" hostname="68768ce41e45" time="0.101">
+  <properties/>
+  <testcase name="test1Save" classname="salesdemo.app.server.service.CurrencyTestCase" time="0.057"/>
+  <testcase name="test2Update" classname="salesdemo.app.server.service.CurrencyTestCase" time="0.013"/>
+  <testcase name="test3FindById" classname="salesdemo.app.server.service.CurrencyTestCase" time="0.006"/>
+  <testcase name="test3findBycountryId" classname="salesdemo.app.server.service.CurrencyTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="salesdemo.app.server.service.CurrencyTestCase" time="0.018"/>
+  <system-out><![CDATA[In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:30.363--ClientSession(934357025)--Connection(516014647)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [6692BA43-D0A3-4632-8CFD-0F89B7117477, 0uJBhkovwDCrYCsW0YoaCn4ktQvNHDLP, 11, 9, z8W, V10, sZLpruNbxjY3vDNDgDDzYDB5WiJCgsuFOGkt8giY5buajHkNho, a23TGkwXVLqshCyYDRTVFneRcIYjFtSRCQQCjmOBDllUoXCJ8x, lDg, mSjhqJDHffcxLJFbvwIckyDW2RlVTbiePQBTy5yMJePSUlMygH, iMn5TyF0IJMYHs7QdIpUHPxLRu2iaFkG, 3, 1, AAAAA, 2015-12-21 12:24:30.359, null, 2015-12-21 12:24:30.359, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:30.4--ClientSession(453913754)--Connection(516014647)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Currency_M (currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [641E7312-2596-46A0-8CD2-56BD770E94B7, 6692BA43-D0A3-4632-8CFD-0F89B7117477, Wd5IZjid5YMLTD8o8cbQ0yOWPp9NG8PoMrWKOkyKtv2u04uO5q, wKYig44ESlLW2g8UnRYh5WJmjO1N5lxsm5E9pj0vgSHvbnrQn8, AsbcVmz1OGBGsxjOuWNzDGidE4pghnNSLYYuFpHsMC7HFd2fnn, 1, AAAAA, 2015-12-21 12:24:30.367, null, 2015-12-21 12:24:30.367, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:30.409--ClientSession(1292984802)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE ((activeStatus = ?) AND (currencyId = ?))
+	bind => [1, 641E7312-2596-46A0-8CD2-56BD770E94B7]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:30.412--ClientSession(1294163167)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE (currencyId = ?)
+	bind => [641E7312-2596-46A0-8CD2-56BD770E94B7]
+[EL Fine]: sql: 2015-12-21 06:54:30.414--ClientSession(1294163167)--Connection(516014647)--Thread(Thread[Test worker,5,main])--UPDATE ast_Currency_M SET currencyCode = ?, unicodeDecimal = ?, unicodeHex = ?, updatedBy = ?, versionId = ? WHERE ((currencyId = ?) AND (versionId = ?))
+	bind => [gRxpRswE24YlULpXag3jBgCeU3By9ayz8ofq6jq05shMPmvVBz, eIxLSZIASVpquhHM3FiqqZ16c4WLGXqLZkrWr10ysoZ2PWoFJa, bZE4UPV5A5iFtE95J70jZG7uzMw7L0enCiVUsSSzwjU2cPMN4T, AAAAA, 2, 641E7312-2596-46A0-8CD2-56BD770E94B7, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:30.422--ClientSession(1843229716)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE ((activeStatus = ?) AND (currencyId = ?))
+	bind => [1, 641E7312-2596-46A0-8CD2-56BD770E94B7]
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:30.428--ClientSession(308435894)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind => [1, 6692BA43-D0A3-4632-8CFD-0F89B7117477]
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:30.435--ClientSession(883017115)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE (currencyId = ?)
+	bind => [641E7312-2596-46A0-8CD2-56BD770E94B7]
+[EL Fine]: sql: 2015-12-21 06:54:30.436--ClientSession(883017115)--Connection(516014647)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Currency_M WHERE ((currencyId = ?) AND (versionId = ?))
+	bind => [641E7312-2596-46A0-8CD2-56BD770E94B7, 2]
+In around repository aspect
+[EL Fine]: sql: 2015-12-21 06:54:30.443--ClientSession(1265120146)--Connection(516014647)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind => [6692BA43-D0A3-4632-8CFD-0F89B7117477]
+[EL Fine]: sql: 2015-12-21 06:54:30.445--ClientSession(1265120146)--Connection(516014647)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind => [6692BA43-D0A3-4632-8CFD-0F89B7117477, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
